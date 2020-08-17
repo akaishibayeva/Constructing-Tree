@@ -1,0 +1,24 @@
+You have been provided with two integers N and X. Your task is to construct an
+undirected tree of N nodes such that it has score exactly equal to X.
+The score of a tree is defined to be the sum of distance of each node from the root node. Node 1 is the root of the tree.
+If there is no such tree possible print out a single edge containing "-1-1".
+
+Input Format:
+
+The first line contains a single integer T denoting the number of test cases.
+The first and only line of each test case contains two space separated integers, N and X.
+
+Constraints:
+
+1 <= T <= 10
+1 <= N <= 5*10^4
+0 <= X <= 10^12
+
+Sum of N over all the test cases do not exceed 10^12
+
+Output Format:
+
+For each test case,
+If such a tree is possible, print N-1  lines each containing two space separated integers u and v denoting an edge between node u and node v.
+The output edges must form a tree which is connected and have no multi edges or loops.
+Else, print a single line containing "-1-1"
